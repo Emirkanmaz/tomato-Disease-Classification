@@ -1,0 +1,32 @@
+.dropzone {
+  border: 2px dashed #0087F7; /* Border rengi ve stilini ekledik */
+  opacity: 0.5;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("images/tomato_bg.avif"); /* Resmin dosya yolunu buraya ekleyin */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+#resultHolder {
+  color: yellowgreen;
+  font-size: 2em;
+  display: none;
+  text-align: center;
+}
