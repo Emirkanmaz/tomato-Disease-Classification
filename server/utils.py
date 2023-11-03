@@ -14,14 +14,14 @@ class_names = ['Tomato Bacterial spot', 'Tomato Early Blight', 'Tomato Late Blig
 
 def load_model():
     print("MODEL LOADING")
-    tf.keras.models.load_model("tomato.h5")  # Model dosyasının yolunu ayarlayın
+    tf.keras.models.load_model("./tomato.h5")  # Model dosyasının yolunu ayarlayın
 
 
 def predict(image):
     global model
 
     if model is None:
-        model = tf.keras.models.load_model("../tomato.h5")
+        model = tf.keras.models.load_model("./tomato.h5")
 
     print("IMAGE IS BEING PROCESSED")
     # image_data = base64.b64decode(image)
